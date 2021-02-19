@@ -17,9 +17,7 @@ def print_deployment_list(namespace):
 	for item in resp.items:
 		total_update = len(item.status.conditions)
 		total_container = len(item.spec.template.spec.containers)	
-		deployment_status_table.add_row([item.metadata.name, 
-										item.spec.template.spec.containers[total_container-1].image, 
-										item.status.conditions[total_update-1].last_update_time])
+		deployment_status_table.add_row([item.metadata.name, item.spec.template.spec.containers[total_container-1].image, item.status.conditions[total_update-1].last_update_time])
 	print(deployment_status_table)
 
 
