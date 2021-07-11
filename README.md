@@ -1,5 +1,9 @@
 # keburnetes-python
 simple scripts related to kubernetes and python
 
-How to run script?   
-$ python3 print_deployments.py --namespace default
+Pre-requisite:
+python3 -m pip install PrettyTable
+python3 -m pip install kubernetes
+
+Run:   
+python3 print_deployments.py --namespace default
