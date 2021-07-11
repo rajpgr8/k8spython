@@ -1,5 +1,5 @@
-# keburnetes-python
-simple scripts related to kubernetes and python
+#### kubernetes-python
+> simple scripts related to kubernetes and python
 
 Pre-requisite:
 python3 -m pip install PrettyTable kubernetes
